@@ -1,0 +1,94 @@
+main{
+    .products{
+        &__button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            button{
+                background: #DC780B;
+                border-radius: 5px;
+                height: 45px;
+                width: 135px;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border: 1.5px solid #DC780B;
+                transition: 0.3s ease;
+                &:hover{
+                    background: none;
+                    color: #DC780B;
+                    transform: scale(1.05);
+                }
+            }  
+        }
+        .carts{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media(max-width: 800px){
+                justify-content: center;
+                align-items: center;
+            }
+            gap: 40px;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                width: 360px;
+                gap: 12px;
+                border: 1px solid #0000001A;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                .descp{
+                    color: #150C01;
+                    padding: 0 20px;
+                }
+                div{
+                    padding: 5px 10px;
+                }
+                &__title{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    font-family: philosopher;
+                }
+                img{
+                    width: 100%;
+                    height: 264px;
+                    object-fit: contain;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 100px;
+                    border-bottom-right-radius: 50px;
+                    background: #dc770b52;
+                }
+                .review{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .stars{
+                        color: #DC780B;
+                    }
+                    button{
+                        background: #DC780B;
+                        border-radius: 5px;
+                        height: 34px;
+                        width: 36px;
+                        color: white;
+                        font-size: 20px;
+                        border: none;
+                        cursor: pointer;
+                        border: 1.5px solid #DC780B;
+                        transition: 0.3s ease;
+                        &:hover{
+                            background: none;
+                            color: #DC780B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

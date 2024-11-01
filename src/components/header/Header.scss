@@ -1,0 +1,50 @@
+.header{
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        .collection{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            li{
+                @media(max-width: 640px){
+                    display: none;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #150C01;
+                transition: 0.3s ease;
+                &:hover{
+                    color: #DC780B;
+                }
+            }
+        }
+        .menu{
+            display: none;
+            font-size: 25px;
+            @media(max-width: 640px){
+                display: block;
+            }
+        }
+        button{
+            background: #DC780B;
+            width: 155px;
+            height: 46px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+            @media(max-width: 750px){
+                display: none;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

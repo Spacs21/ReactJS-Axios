@@ -1,0 +1,122 @@
+article{
+    padding: 150px 0 100px;
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 487px;
+            h2{
+                font-family: philosopher;
+                line-height: 40.63px;
+                font-size: 31.25px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .info{
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 5px;
+                font-family: Roboto;
+                color: #DC780B;
+            }
+            &__btn{
+                margin-top: 10px;
+                button{
+                    cursor: pointer;
+                    width: 142px;
+                    height: 42px;
+                    background: #DC780B;
+                    border: 1.5px solid #DC780B;
+                    transition: 0.4s ease;
+                    color: white;
+                    border-radius: 5px;
+                    &:hover{
+                        background: none;
+                        color: #DC780B;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1147px) {
+    article {
+        padding: 100px 0 80px;
+        .banner {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            &__text {
+                width: 100%;
+                gap: 5px;
+                h2 {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+                .info {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                &__btn button {
+                    width: 120px;
+                    height: 40px;
+                }
+            }
+            &__image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    article {
+        padding: 80px 0 60px;
+        .banner {
+            &__text {
+                h2 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .info {
+                    font-size: 14px;
+                }
+                &__btn button {
+                    width: 100px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        padding: 60px 0 40px;
+        .banner {
+            &__text {
+                width: 100%;
+                h2 {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                .info {
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 2px;
+                }
+                &__btn button {
+                    width: 90px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}
